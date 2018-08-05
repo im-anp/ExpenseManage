@@ -24,7 +24,7 @@ class  ExpenseListFilter extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className="filter-box">
             <input type="text" className="form-control" value={this.props.filters.text} onChange = {(e) => {
                 this.props.dispatch(setTextFilter(e.target.value));
             // console.log(e.target.value);

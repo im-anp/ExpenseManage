@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from '../header/header';
 import './home.css';
 import ExpenseList from '../expenseList/expenseList';
-import ExpenseFilter from '../../components/expenseList/expenseListFilter';
+import ExpensesSummary from '../expenseList/ExpensesSummary';
 
 class Home extends Component {
 
@@ -10,7 +10,7 @@ class Home extends Component {
         return (
             <div className="main-container">
                 <Header />
-                <ExpenseFilter />
+                <ExpensesSummary />
                 <ExpenseList />
             </div>
         )

@@ -1,5 +1,108 @@
-body {
+
+html,body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  height: 100%;
+  width:100%;
+}
+#root{
+  width:100%;
+  height: 100%;
+}
+.login-container{
+  width:100%;
+  height:100%;
+  background:url('./login.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.login-box{
+  padding: 20px;
+  margin: px auto;
+  position: absolute;
+  /* display: table; */
+  /* position: absolute; */
+  background: rgba(255, 255, 255, 0.79);
+  /* box-sizing: border-box; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+}
+.login-box button{
+  width:300px;
+}
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float:right;
+}
+.ex-item{
+  padding: 10px;
+ 
+  /* margin: 10px; */
+  color: #fff;
+  margin-bottom: 10px;
+}
+.amount-sec{
+  font-size: 25px;
+  font-weight: bold;
+}
+.date{
+  margin-top: 13px;
+}
+.yellow{
+  background: #FFD35C;
+}
+.pink{
+  background: #F65B73;
+}
+.blue{
+  background: #57C9FC;
+}
+.green{
+  background: #98E948;
+}
+.MuiButton-containedPrimary-11 {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+.move-right{
+  position: absolute;
+  right: 10px;
+
+}
+header a{
+  color:#fff;
+}
+.filter-box{
+  padding: 10px;
+    margin: 10px;
+    border: 1px solid #3f51b5;
+    border-radius: 20px;
+}
+.filter-box > input{
+  margin-bottom: 10px;
+}
+.filter-box .DateRangePickerInput {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.expense-summary{
+  margin-bottom: 10px;
+    background: #F50057;
+    color: #fff;
+}
+.summary{
+  margin-top: 10px;
+    margin-left: 10px;
+    width:80%;
+}
+.mr{
+  margin-right:14%;
+}
+.MuiIconButton-colorPrimary-42 {
+  color: #fff !important;
 }

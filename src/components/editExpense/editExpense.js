@@ -3,7 +3,7 @@ import ExpenseForm from '../expenseForm/expenseForm';
 // import {addExpense} from '../../action/expenses';
 import {connect} from 'react-redux';
 import Header from '../header/header';
-import { editExpense, removeExpense } from '../../action/expenses';
+import { startEditExpense, startRemoveExpense } from '../../action/expenses';
 
 
 const EditExpense = (props) => {
@@ -14,12 +14,12 @@ const EditExpense = (props) => {
             <ExpenseForm expense = {props.expense} 
              onSubmit ={(expense)=>{
                  console.log('updated',expense);
-                 props.dispatch(editExpense(props.expense.id,expense));
+                 props.dispatch(startEditExpense(props.expense.id,expense));
                  props.history.push('/');
              }}
             />
             <button className="btn btn-danger" onClick = {()=>{
-                props.dispatch(removeExpense({id:props.expense.id}));
+                props.dispatch(startRemoveExpense({id:props.expense.id}));
                 props.history.push('/');
             }}>Remove</button>
         </div>

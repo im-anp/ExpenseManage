@@ -1,4 +1,4 @@
-import {createStore,combineReducers, applyMiddleware,compose} from 'C:/Users/anoop-pc/AppData/Local/Microsoft/TypeScript/2.9/node_modules/redux';
+import {createStore,combineReducers, applyMiddleware,compose} from 'redux';
 import expenseReducer from '../reducers/expenses';
 import filterReduser from '../reducers/filters';
 import authReduser from '../reducers/auth';
